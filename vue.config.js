@@ -1,3 +1,5 @@
 module.exports={
-  publicPath:'<https://github.com/evassilyev/vue-playground>'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/vue-playground/'
+    : '/'
 }
